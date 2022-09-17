@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goofin</title>
+</head>
+<body>
+<h1>Big Survey</h1>
+<form action="#">
+    <fieldset>
+        <label for="name">Your Name: </label><input type="text" id="name" required>
+        <label for="choice">Is a hot dog a sandwhich? </label><input list="choices" id="choice" required>
+        <datalist id="choices">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Perhaps</option>
+        </datalist>
+        <button id="button">Submit</button>
+    </fieldset>
+</form>
+<div>
+    <h2>Chose Right</h2>
+    <ul id="right"></ul>
+</div>
+<div>
+    <h2>Chose Wrong</h2>
+    <ul id="wrong"></ul>
+</div>
+<div>
+    <h2>Make up your mind</h2>
+    <ul id="what"></ul>
+</div>
+<script type="module" src="js/scripts.js"></script>
+</body>
+</html>
